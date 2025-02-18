@@ -8,29 +8,19 @@ var randomNumber = Math.floor(Math.random() * quotesArray.length);
 document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
 //console.log(quotesArray[randomNumber].split(' — ')[0]);
 
-
 // Get today's date
-
 let today = new Date();
-
 let todayDate = today.getDate();
-
-
-
-
 // Select the HTML element where you want to display the date-related text
-
 let dateTextElement = document.getElementById('press-quote');
-
-
 
 // Conditional logic to change the text based on the date
 
-if (todayDate === 18) {
+if (todayDate === 18 ) {
 
   dateTextElement.textContent = "Happy Valentine's Day!";
 
 } else {
 
-  dateTextElement.textContent = "Today is " + todayMonth + "/" + todayDate;
+  dateTextElement.textContent = "Today is the" + "/" + todayDate;
 }
