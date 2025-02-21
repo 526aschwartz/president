@@ -16,7 +16,7 @@ let dateTextElement = document.getElementById('press-quote');
 
 // Conditional logic to change the text based on the date
 
-if (todayDate === 18 ) {
+if (todayDate === 21) {
 
   dateTextElement.textContent = "Happy Valentine's Day!";
 
