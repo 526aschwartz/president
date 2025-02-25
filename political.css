@@ -15,7 +15,7 @@
   }
   
   body {
-    background: var(--light-bg);
+    background: #528ce4;
     font-family: "Space Grotesk", sans-serif;
     color: var(--dark);
   }
@@ -29,7 +29,7 @@
     font-size: 1em;
     line-height: 1.7;
     font-weight: 300;
-    color: var(--text-gray);
+    color: black;
   }
   
   .description {
@@ -57,7 +57,7 @@
     flex-basis: 100%;
     position: relative;
     padding: 24px;
-    background: #fff;
+    background: #99bbee;
   }
   
   .box-top {
@@ -84,10 +84,11 @@
   .box-title {
     border-left: 3px solid var(--purple);
     padding-left: 12px;
+    font-family: "Bebas Neue", cursive;
   }
   
   .user-follow-info {
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 100%);
   }
   
   .button {
