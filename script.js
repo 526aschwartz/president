@@ -10,11 +10,19 @@ document.getElementById('press-quote').textContent = '“' + quotesArray[randomN
 
 
 
-const timeoutTime = 180000; // Time in milliseconds (e.g., 5000 for 5 seconds)
+const timeoutTime = 181000; // Time in milliseconds (e.g., 5000 for 5 seconds)
   let timeoutId;
 
   function setBlackScreen() {
     document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white'; // Ensure text is visible
+    document.body.style.display = 'flex';
+    document.body.style.justifyContent = 'center';
+    document.body.style.alignItems = 'center';
+    document.body.style.height = '100vh';
+    document.body.style.textAlign = 'center';
+    document.body.style.fontSize = '24px';
+    document.body.style.padding = '20px';
     document.body.innerHTML = 'Was the 3 minutes and 1 second not enough time? Neither was the 31 days he was in office for.'; // Clear content
   }
 
