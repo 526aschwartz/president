@@ -10,33 +10,31 @@ document.getElementById('press-quote').textContent = '“' + quotesArray[randomN
 
 
 
-const timeoutTime = 2000; // Time in milliseconds (e.g., 181000 for 3 minutes and 1 second)
-let timeoutId;
+const timeoutTime = 181000; // Time in milliseconds (e.g., 5000 for 5 seconds)
+  let timeoutId;
 
-function setBlackScreen() {
-  // Set background color and text for the black screen
-  document.body.style.backgroundColor = 'black';
-  document.body.style.color = 'white'; // Ensure text is visible
-  document.body.style.display = 'flex';
-  document.body.style.justifyContent = 'center';
-  document.body.style.alignItems = 'center';
-  document.body.style.height = '100vh';
-  document.body.style.textAlign = 'center';
-  document.body.style.fontSize = '24px';
-  document.body.style.padding = '20px';
-  document.body.innerHTML = 'Was the 3 minutes and 1 second not enough time? Neither was the 31 days he was in office for.'; // Clear content
-}
+  function setBlackScreen() {
+    document.body.style.backgroundColor = 'black';
+    document.body.style.color = 'white'; // Ensure text is visible
+    document.body.style.display = 'flex';
+    document.body.style.justifyContent = 'center';
+    document.body.style.alignItems = 'center';
+    document.body.style.height = '100vh';
+    document.body.style.textAlign = 'center';
+    document.body.style.fontSize = '24px';
+    document.body.style.padding = '20px';
+    document.body.innerHTML = 'Was the 3 minutes and 1 second not enough time? Neither was the 31 days he was in office for.'; // Clear content
+  }
 
-function resetTimeout() {
-  // Clear the previous timeout and set a new one
-  clearTimeout(timeoutId);
-  timeoutId = setTimeout(setBlackScreen, timeoutTime);
-}
+  function resetTimeout() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(setBlackScreen, timeoutTime);
+  }
 
-// Initial timeout setup when the page is loaded
-resetTimeout();
+  // Initial timeout setup
+  resetTimeout();
 
-// Reset timeout on user interaction (e.g., mousemove, keydown, click)
-document.addEventListener('mousemove', resetTimeout);
-document.addEventListener('keydown', resetTimeout);
-document.addEventListener('click', resetTimeout);
+  // Reset timeout on user interaction (e.g., mousemove, keydown, click)
+  document.addEventListener('mousemove', resetTimeout);
+  document.addEventListener('keydown', resetTimeout);
+  document.addEventListener('click', resetTimeout);
